@@ -17,9 +17,10 @@ Step 6: Perform exact inference using the defined evidence and query variables.<
 Step 7: Print the results.<br>
 
 ## Program :
-~~~
+```
 !pip install pgmpy
-
+```
+```python
 # Importing Library
 from pgmpy.models import DiscreteBayesianNetwork
 from pgmpy.inference import VariableElimination
@@ -79,7 +80,7 @@ print(res)
 evidence2={"JohnCalls":1,"MaryCalls":1}
 res2=inference.query(variables=[query],evidence=evidence2)
 print(res2)
-~~~
+```
 
 ## Output :
 ![Screenshot 2025-04-08 092617](https://github.com/user-attachments/assets/1c69f0ac-85cf-41e4-b678-6f60594358a8)
